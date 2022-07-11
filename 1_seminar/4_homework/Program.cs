@@ -9,9 +9,9 @@ namespace homework3 {
             int N = int.Parse(Console.ReadLine());
 
             Console.Write("All even number: \n");
-            for(int i = 0; i < N; i++) {
+            for(int i = 1; i <= N; i++) {
                 if(i % 2 == 0) {
-                    Console.WriteLine("{0}", i);
+                    Console.Write(i + " ");
 
                 }
             }
