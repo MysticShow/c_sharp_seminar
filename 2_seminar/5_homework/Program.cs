@@ -1,22 +1,23 @@
-﻿// using System;
-
-namespace homework5 {
+﻿namespace homework5 {
 
     class Program {
 
         static void Main() {
-            Console.Write("Please enter a number N: ");
-            int N = int.Parse(Console.ReadLine());
 
-            Console.Write("All even number: \n");
-            for(int i = 1; i <= N; i++) {
-                if(i % 2 == 0) {
-                    Console.Write(i + " ");
+            while(true) {
+
+                string num = Console.ReadLine();
+
+                if(!num.Equals("exit")) {
+
+                    Console.WriteLine("{0}->{1}", num, num[1]);
+
+                } else {
+
+                    break;
 
                 }
             }
-
         }
-
     }
 }
